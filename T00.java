@@ -12,33 +12,33 @@ public class T00 {
         b1 = Integer.parseInt(input.nextLine());
         bil2 = Integer.parseInt(input.nextLine());
         if (b1 % 2 == 0) {
-            System.out.println(Integer.toString(b1) + "bilangan genap");
+            System.out.println("Bilangan pertama: Genap");
         } else {
-            System.out.println(Integer.toString(b1) + "bilangan ganjil");
+            System.out.println("Bilangan pertama: Ganjil");
         }
         if (bil2 % 2 == 0) {
-            System.out.println(Integer.toString(bil2) + "bilangan genap");
+            System.out.println("Bilangan kedua: Genap");
         } else {
-            System.out.println(Integer.toString(bil2) + "bilangan ganjil");
+            System.out.println("Bilangan kedua: Ganjil");
         }
         if (b1 > bil2) {
-            System.out.println(Integer.toString(b1) + "lebih besar dari" + bil2);
+            System.out.println("Bilangan pertama lebih besar");
         } else {
             if (b1 == bil2) {
-                System.out.println(Integer.toString(b1) + "=" + bil2);
+                System.out.println("Kedua bilangan sama besar");
             } else {
-                System.out.println(Integer.toString(b1) + "lebih kecil" + bil2);
+                System.out.println("Bilangan kedua lebih besar");
             }
         }
         if (b1 % 2 == 0 && bil2 % 2 == 0) {
             c1 = b1 + bil2;
-            System.out.println(c1);
+            System.out.println("Hasil penjumlahan: " + c1);
         } else {
-            if (b1 % 2 == 0 && bil2 % 2 == 0 && b1 % 2 != 0 && bil2 % 2 != 0) {
+            if (b1 % 2 != 0 && bil2 % 2 != 0) {
                 c2 = b1 * bil2;
-                System.out.println(c2);
+                System.out.println("Hasil perkalian: " + c2);
             } else {
-                System.out.println("beda jenis");
+                System.out.println("Berbeda jenis");
             }
         }
     }

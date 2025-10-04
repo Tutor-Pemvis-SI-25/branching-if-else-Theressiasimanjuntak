@@ -1,4 +1,5 @@
-12S25029-Theressia Olivia Simanjuntak
+//12S25029-Theressia Olivia Simanjuntak
+//12S25026-Andre Bonaran Situngkir
 import java.util.*;
 import java.lang.Math;
 

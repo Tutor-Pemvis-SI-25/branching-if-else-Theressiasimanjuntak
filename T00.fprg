@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="T00"/>
+        <attribute name="authors" value="LENOVO LOQ"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-04 01:02:58 PM"/>
+        <attribute name="created" value="TEVOT1ZPIExPUTtPTElQUDsyMDI1LTEwLTAxOzA4OjA5OjE5IFBNOzI0MDU="/>
+        <attribute name="edited" value="TEVOT1ZPIExPUTtPTElQUDsyMDI1LTEwLTA0OzAxOjAyOjU4IFBNOzI7MjUwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b1, bil2, c1, c2" type="Integer" array="False" size=""/>
+            <input variable="b1"/>
+            <input variable="bil2"/>
+            <if expression="b1 MOD 2=0">
+                <then>
+                    <output expression="b1&amp;&quot;bilangan genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="b1&amp; &quot;bilangan ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="bil2 MOD 2=0">
+                <then>
+                    <output expression="bil2&amp;&quot;bilangan genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="bil2&amp;&quot;bilangan ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="b1&gt;bil2">
+                <then>
+                    <output expression="b1&amp;  &quot;lebih besar dari&quot;  &amp;bil2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b1=bil2">
+                        <then>
+                            <output expression="b1&amp; &quot;=&quot; &amp;bil2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="b1&amp; &quot;lebih kecil&quot; &amp;bil2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="(b1 MOD 2=0)&amp;&amp;(bil2 MOD 2=0)">
+                <then>
+                    <assign variable="c1" expression="b1+bil2"/>
+                    <output expression="c1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(b1 MOD 2=0)&amp;&amp;(bil2 MOD 2=0)&amp;&amp;(b1 MOD 2!=0)&amp;&amp;(bil2 MOD 2!=0)">
+                        <then>
+                            <assign variable="c2" expression="b1*bil2"/>
+                            <output expression="c2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;beda jenis&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
